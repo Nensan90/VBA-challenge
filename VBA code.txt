@@ -1,0 +1,22 @@
+
+Sub Stocktest()
+Dim i As Long
+Dim j As Integer
+    For i = 2 To 100
+
+    For j = 3 To 7
+    
+If IsNumeric(Sheet1.Cells(i, j).Value) = True Then
+    Cells(i, 9).Value = Cells(i, 1)
+    Cells(i, 10).Value = Cells(i, 3) - Cells(i, 6)
+    Cells(i, 11).Value = Cells(i, 3) / Cells(i, 6)
+    Cells(i, 12).Value = Cells(i, 7)
+Else
+
+    End If
+    
+    Next j
+    
+    Next i
+    
+End Sub
